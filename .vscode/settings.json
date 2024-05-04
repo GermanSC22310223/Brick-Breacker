@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "thread": "cpp"
+    },
+    "cmake.sourceDirectory": "/workspaces/tron/FTXUI"
+}
