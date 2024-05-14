@@ -18,8 +18,8 @@ int main(int argc, char const *argv[])
     {
         this_thread::sleep_for(0.1s);
         fotograma++;
-        Element personaje = spinner (21,fotograma) | bold | color(Color::Black) | bgcolor(Color::White);
-        Element dibujo = vbox({personaje , soporte.GetElement()});
+        Element soporte = spinner (21,fotograma) | bold | color(Color::Black) | bgcolor(Color::White);
+        Element dibujo = vbox({ soporte.GetElement()});
         Screen pantalla = Screen::Create(Dimension::Full());
         Render(pantalla,dibujo);
         pantalla.Print();

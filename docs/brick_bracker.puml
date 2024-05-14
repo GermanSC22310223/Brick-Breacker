@@ -1,0 +1,34 @@
+@startuml Brick_Breaker
+
+class Juego
+class Barra
+class Ladrillos
+class Pelota
+class Colisionable
+class Monedas
+class Poderes
+class Jugador
+class Vida
+class Colores
+
+Juego o-- Ladrillos
+Ladrillos o-- Poderes
+Ladrillos o-- Monedas
+Juego o-- Jugador
+Ladrillos o-- Colores
+Jugador o-- Vida
+Pelota o-- Poderes
+
+Jugador *-- Juego
+Jugador *-- Barra
+Barra *-- Pelota
+Barra *-- Vida
+Jugador *-- Vida
+Jugador *-- Poderes
+Jugador *-- Monedas
+
+Pelota --|> Colisionable
+Ladrillos --|> Colisionable
+
+
+@enduml
