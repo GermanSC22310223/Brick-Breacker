@@ -16,14 +16,14 @@ Ladrillos o-- Poderes
 Ladrillos o-- Monedas
 Juego o-- Jugador
 Ladrillos o-- Colores
-Jugador o-- Vida
+Jugador o-- "3" Vida
 Pelota o-- Poderes
 
 Jugador *-- Juego
-Jugador *-- Barra
-Barra *-- Pelota
-Barra *-- Vida
-Jugador *-- Vida
+Jugador *-- "1" Barra 
+Barra *-- "1"Pelota
+Barra *-- "3"Vida
+Jugador *-- "3"Vida
 Jugador *-- Poderes
 Jugador *-- Monedas
 

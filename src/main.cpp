@@ -19,9 +19,9 @@ int main(int argc, char const *argv[])
         this_thread::sleep_for(0.1s);
         fotograma++;
         Element soporte = spinner (21,fotograma) | bold | color(Color::Black) | bgcolor(Color::White);
-        Element dibujo = vbox({ soporte.GetElement()});
+        Element Dibujo = vbox({soporte.GetElement()});
         Screen pantalla = Screen::Create(Dimension::Full());
-        Render(pantalla,dibujo);
+        Render(pantalla,Dibujo);
         pantalla.Print();
         cout<<pantalla.ResetPosition();
     }
